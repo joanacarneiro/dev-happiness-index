@@ -1,0 +1,19 @@
+apiVersion: skaffold/v2beta26
+kind: Config
+metadata:
+  name: hello-geek-girls
+build:
+  artifacts:
+    - image: hello-geek-girls
+      context: .
+      docker:
+        dockerfile: Dockerfile
+deploy:
+  kubectl:
+    manifests:
+      - k8s/deployment.yaml 
+portForward:
+  - resourceType: service
+    resourceName: hello-geek-girls-service
+    port: 80
+    localPort: 8080
