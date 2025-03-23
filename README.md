@@ -4,7 +4,7 @@
 
 - Install git
 
-## 
+## Steps
 
 
 ```bash
