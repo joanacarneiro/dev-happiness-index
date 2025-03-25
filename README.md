@@ -1,4 +1,4 @@
-# Software Engineer Happiness Index in Cloud Environment
+# Software Engineer Happiness Index
 
 ## Pre-requisites
 
