@@ -15,7 +15,7 @@ Download and install [Docker](https://docs.docker.com/desktop/setup/install/mac-
 Execute the below script, to make sure all of the pre-requisites are installed in your machine, if not already. This includes: brew, git, kubectl, kind and skaffold. In case this tools are already installed, then, their installation will be skipped.
 
 ```bash
-./pre-requisites/mac-setup.sh
+./setup/macOs/create.sh
 ```
 
 
@@ -36,7 +36,7 @@ For Windows or Linux Operating Systems, please follow the instructions of each t
 
 #### Docker at MacOs
 
-In case docker command is not recognized, for example getting "zsh: command not found: docker" at some point, then add Docker to your path by edditing file ~/.zprofile, and add to it the line:
+In case docker command is not recognized, for example getting "zsh: command not found: docker" at some point, then add Docker to your path by editing file ~/.zprofile, and add to it the line:
 
 ```bash
 # Add Docker Desktop for Mac (docker)

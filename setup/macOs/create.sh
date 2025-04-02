@@ -1,8 +1,11 @@
 #!/bin/bash
 
-#####################################################################
-# The current script installs the necessary dependencies for MacOs
-#####################################################################
+############################################################################################
+# The current script 
+# - installs the necessary dependencies for MacOs (brew, git, kubectl, kind and skaffold)
+# - in case the tools are already installed, then it skips its installation
+# - also creates a kubernetes cluster using kind and named geek-girls-cluster
+############################################################################################
 
 ## Install package manager
 which -s brew
@@ -47,4 +50,12 @@ if [[ $? != 0 ]] ; then
     brew install skaffold
 else
     printf -- 'Skaffold is already installed.\n'
+fi
+
+## Create Kubernetes Cluster
+if ! kind get clusters | grep -q '^geek-girls-cluster$'; then
+    printf -- 'Creating Kubernetes Cluster for a Geek Girl.... \n'
+    kind create cluster --name geek-girls-cluster
+else
+    printf -- 'Geek Girls Cluster already exists.... \n'
 fi
