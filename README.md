@@ -2,6 +2,16 @@
 
 </br>
 
+* [What Is This Repository Intended For?](#what-is-this-repository-intended-for)
+* [Mission](#mission)
+* [Local Environment Setup](#local-environment-setup)
+* [Task 1](#task-1)
+* [Task 2](#task-2)
+* [Other Operating Systems (Sorry)](#other-operating-systems-sorry)
+* [Troubleshooting](#troubleshooting)
+
+</br>
+
 ## What Is This Repository Intended For?
 
 This is the repository that tests the influence of different tools and processes in the happiness index of us, software developers! How comfortable are we making a change to a code base? How much effort we immediately foresee in order to do it? How many times will we just need to take a break by the simple task of testing it?
@@ -134,9 +144,9 @@ Start Skaffold
 skaffold dev
 ```
 
-### Troubleshooting
+## Troubleshooting
 
-#### Docker at MacOs
+### Docker at MacOs
 
 In case docker command is not recognized, for example getting "zsh: command not found: docker" at some point, then add Docker to your path by editing file ~/.zprofile, and add to it the line:
 
@@ -149,24 +159,4 @@ And then make sure the changes take effect
 
 ```bash
 source ~/.zprofile
-```
-
-## Setup Kubernetes Cluster
-
-```bash
-kind create cluster --name geek-girls-cluster
-```
-
-## Steps
-
-
-
-```bash
-
-git clone https://github.com/joanacarneiro/dev-happiness-index.git
-cd dev-happiness-index/src
-npm install
-cd ..
-skaffold dev
-
 ```
