@@ -113,6 +113,11 @@ kubectl get pods
 
 Lets explore the capabilities of skaffold it self. Lets add a profile to it.
 
+```bash
+kind delete clusters geek-girls-cluster
+./setup/start.sh
+```
+
 
 ## Other Operating Systems (Sorry)
 
