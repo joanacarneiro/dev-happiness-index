@@ -23,7 +23,7 @@ else
 fi
 
 ## Install containerization tool
-which -s git
+which -s docker
 if [[ $? != 0 ]] ; then
     printf -- 'Installing docker.... \n'
     brew install --cask docker
@@ -32,7 +32,7 @@ else
 fi
 
 ## Install kubernetes cli
-which -s git
+which -s kubectl
 if [[ $? != 0 ]] ; then
     printf -- 'Installing kubectl.... \n'
     brew install kubectl
