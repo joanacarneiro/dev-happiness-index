@@ -2,18 +2,38 @@ apiVersion: skaffold/v2beta26
 kind: Config
 metadata:
   name: hello-geek-girls
+
 build:
   artifacts:
     - image: hello-geek-girls
-      context: .
       docker:
         dockerfile: Dockerfile
+
 deploy:
   kubectl:
     manifests:
-      - k8s/deployment.yaml 
+      - k8s/deployment.yaml  # Always deploy the application
+
 portForward:
   - resourceType: service
     resourceName: hello-geek-girls-service
     port: 80
-    localPort: 8080
+    localPort: 8080  # Always available
+
+profiles:
+  - name: mock
+    build:
+      artifacts:
+        - image: mock-service
+          docker:
+            dockerfile: mocks/Dockerfile  # Use Dockerfile directly, no need for custom field
+    deploy:
+      kubectl:
+        manifests:
+          - k8s/deployment.yaml  # Application
+          - k8s/mocks.yaml       # Mock service (only for "mock" profile)
+    portForward:
+      - resourceType: service
+        resourceName: mock-service
+        port: 8081
+        localPort: 8081  # Only for "mock" profile

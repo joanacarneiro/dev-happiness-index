@@ -1,0 +1,17 @@
+{
+    "name": "mock-service",
+    "version": "1.0.0",
+    "description": "A mock service for development",
+    "main": "index.js",
+    "scripts": {
+      "start": "echo 'Mock service running!'"
+    },
+    "dependencies": {},
+    "devDependencies": {},
+    "engines": {
+      "node": ">=14.0.0"
+    },
+    "author": "",
+    "license": "ISC"
+  }
+  
