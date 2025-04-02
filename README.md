@@ -1,20 +1,19 @@
 # Software Engineer Happiness Index
 
+This worshop is prepared for Linux based 
+
 ## Pre-requisites
 
-- Install git
-- Install docker
-- Install kind
-- Install kubectl
-- Install skaffold
+| Tool            | Description | Instructions |
+| --------------- | ----------- | ------------ |
+| Package Manager |             | [Brew for Mac](https://brew.sh) </br> []() </br> [brew for Linux](https://brew.sh) 
+| Git      |             | [Mac](https://git-scm.com/downloads/mac) </br> [Windows](https://git-scm.com/downloads/win) </br> [Linux](https://git-scm.com/downloads/linux) |
+| Docker   |             | [Mac](https://docs.docker.com/desktop/setup/install/mac-install/) </br> [Windows](https://docs.docker.com/desktop/setup/install/windows-install/) </br> [Linux](https://docs.docker.com/desktop/setup/install/linux/) |
+| Kubectl  |             | [Mac](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/) </br> [Windows](https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/) </br> [Linux](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
+| Kind     |             | 
+| Skaffold |             | [All OS](https://skaffold.dev/docs/install/#standalone-binary) | 
 
-
-## Setup Docker
-
-Mac --> https://docs.docker.com/desktop/setup/install/mac-install/
-Windows --> https://docs.docker.com/desktop/setup/install/windows-install/
-Linux --> https://docs.docker.com/desktop/setup/install/linux/ 
-
+### Commands for MacOs
 
 ```bash
 
@@ -22,15 +21,6 @@ Linux --> https://docs.docker.com/desktop/setup/install/linux/
 
 ```
 
-## Setup skaffold
-
-https://skaffold.dev/docs/install/
-
-```bash
-
-brew install skaffold
-
-```
 
 ## Setup Kubernetes Cluster
 
