@@ -20,21 +20,15 @@ You just joined the team. The team is pretty confident on your skills and they a
 
 (How much confidence do you feel right now?)
 
-</br>
-
-## Task 1
-
-</br>
-
-## Task 2
+But your first task if to setup your local environment!
 
 </br>
 
 ## Local Environment Setup
 
-Our team has an aligned set of machines, meaning that every team member has a MacOs with Apple silicon so that we can assure a coherent set of machines that we can predict a close set of behaviors, plus being able to spread much more lessons learned and automation that will fit all the team members.
+Our team has an aligned set of machines, meaning that every team member has a **MacOs with Apple Silicon** so that we can assure a coherent set of machines that we can predict a close set of behaviors, plus being able to spread much more lessons learned and automation that will fit all the team members.
 
-In case you do not have a MacOs, please go to section [we are really sorry you have other operating system, and please approach your manager as soon as possible and complain about it](#other-operating-systems-sorry).
+In case you do not have a machine that matches the other team members (**MacOs with Apple Silicon**), please go to section [we are really sorry you have other operating system, and please approach your manager as soon as possible and complain about it](#other-operating-systems-sorry). We will make our best to help.
 
 ### Pre-requisites
 
@@ -46,6 +40,24 @@ Execute the below script, to make sure all of the pre-requisites are installed i
 
 ```bash
 ./setup/start.sh
+```
+
+</br>
+
+⭐ **Note:** You are now ready to start your tasks! Let's check what happened locally and we can start programming!
+
+</br>
+
+## Task 1
+
+</br>
+
+## Task 2
+
+Application hello-geek-girls only has 2 replicas on our kubernetes cluster. We need for it to have 3!
+
+```bash
+kubectl 
 ```
 
 ## Other Operating Systems (Sorry)
