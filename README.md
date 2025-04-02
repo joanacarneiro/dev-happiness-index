@@ -44,7 +44,7 @@ Execute the below script, to make sure all of the pre-requisites are installed i
 
 </br>
 
-⭐ **Note:** You are now ready to start your tasks! Let's check what happened locally and we can start programming!
+⭐ **Note:** You are now ready to start your tasks! But let's check what happened locally and we can start programming!
 
 </br>
 
@@ -57,8 +57,16 @@ Execute the below script, to make sure all of the pre-requisites are installed i
 Application hello-geek-girls only has 2 replicas on our kubernetes cluster. We need for it to have 3!
 
 ```bash
-kubectl 
+kubectl get pods -A
 ```
+
+Check that you have 2 pods for application hello-geek-girls.
+
+</br>
+
+⭐ **Note:** Having this setup can also be a quick way to learn a new language or technology and be able to do some quick experiments!
+
+</br>
 
 ## Other Operating Systems (Sorry)
 
