@@ -4,13 +4,13 @@
 
 ## What Is This Repository Intended For?
 
-This is the repository that tests the influence of different tools and processes in the happiness index of us, software developers! How confortable are we making a change to a code base? How much effort we immediatly forsee in order to do it? How many times will we just need to take a break by the simple task of testing it?
+This is the repository that tests the influence of different tools and processes in the happiness index of us, software developers! How comfortable are we making a change to a code base? How much effort we immediately foresee in order to do it? How many times will we just need to take a break by the simple task of testing it?
 
 </br>
 
 ## Mission
 
-You just joined the team. The team is pretty confident on your skills and they ask you: 
+You just joined the team. The team is pretty confident on your skills and they ask you:
 
 > Please amazing Geek Girl, can you make this two tiny bitty winny changes to this code base?
 >
@@ -24,18 +24,15 @@ You just joined the team. The team is pretty confident on your skills and they a
 
 ## Task 1
 
-
 </br>
 
 ## Task 2
 
-
 </br>
-
 
 ## Local Environment Setup
 
-Our team has an aligned set of machines, meaning that every team member has a MacOs with Apple silicon so that we can assure a coherent set of machines that we can predict a close set of behaviours, plus being able to spread much more lessons learned and automations that will fit all the team members.
+Our team has an aligned set of machines, meaning that every team member has a MacOs with Apple silicon so that we can assure a coherent set of machines that we can predict a close set of behaviors, plus being able to spread much more lessons learned and automation that will fit all the team members.
 
 In case you do not have a MacOs, please go to section [we are really sorry you have other operating system, and please approach your manager as soon as possible and complain about it](#other-operating-systems-sorry).
 
@@ -62,8 +59,8 @@ Install the below tools, if not already.
 | Git      | [Windows](https://git-scm.com/downloads/win) </br> [Linux](https://git-scm.com/downloads/linux) |
 | Docker   | [Windows](https://docs.docker.com/desktop/setup/install/windows-install/) </br> [Linux](https://docs.docker.com/desktop/setup/install/linux/) |
 | Kubectl  | [Windows](https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/) </br> [Linux](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
-| Kind     | [All OS](https://kind.sigs.k8s.io/docs/user/quick-start/#installation)            | 
-| Skaffold | [All OS](https://skaffold.dev/docs/install/#standalone-binary) | 
+| Kind     | [All OS](https://kind.sigs.k8s.io/docs/user/quick-start/#installation)            |
+| Skaffold | [All OS](https://skaffold.dev/docs/install/#standalone-binary) |
 
 ### Launch Environment
 
@@ -105,13 +102,11 @@ kind create cluster --name geek-girls-cluster
 ## Steps
 
 
-## Steps
-
 
 ```bash
 
 git clone https://github.com/joanacarneiro/dev-happiness-index.git
-cd dev-happiness-index/scr
+cd dev-happiness-index/src
 npm install
 cd ..
 skaffold dev

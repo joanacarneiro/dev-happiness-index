@@ -60,5 +60,19 @@ else
     printf -- 'Geek Girls Cluster already exists.... \n'
 fi
 
+## Install npm
+which -s npm
+if [[ $? != 0 ]] ; then
+    printf -- 'Installing npm.... \n'
+    brew install node
+else
+    printf -- 'Npm is already installed.\n'
+fi
+
+## Install npm packages
+cd src
+npm install
+cd ..
+
 ## Launch skaffold
 skaffold dev
