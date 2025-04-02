@@ -64,7 +64,7 @@ Check that you have 2 pods for application hello-geek-girls.
 
 </br>
 
-⭐ **Note:** Having this setup can also be a quick way to learn a new language or technology and be able to do some quick experiments!
+⭐ **Note:** Having this setup can also be a quick way to learn a new language or technology and be able to do some quick experiments! This could also have been use for more complex tasks such as creating a k8s secret and consume it from the application.
 
 </br>
 
