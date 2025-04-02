@@ -75,4 +75,4 @@ npm install
 cd ..
 
 ## Launch skaffold
-skaffold dev
+skaffold dev --profile=mock

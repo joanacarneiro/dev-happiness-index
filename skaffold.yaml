@@ -24,16 +24,23 @@ profiles:
   - name: mock
     build:
       artifacts:
-        - image: mock-service
+        - image: hello-geek-girls  # Make sure the app is built
           docker:
-            dockerfile: mocks/Dockerfile  # Use Dockerfile directly, no need for custom field
+            dockerfile: Dockerfile
+        - image: mock-service  # Build the mock service too
+          docker:
+            dockerfile: mocks/Dockerfile
     deploy:
       kubectl:
         manifests:
-          - k8s/deployment.yaml  # Application
-          - k8s/mocks.yaml       # Mock service (only for "mock" profile)
+          - k8s/deployment.yaml  # Deploy the application
+          - k8s/mocks.yaml       # Deploy the mock service
     portForward:
+      - resourceType: service
+        resourceName: hello-geek-girls-service
+        port: 80
+        localPort: 8080
       - resourceType: service
         resourceName: mock-service
         port: 8081
-        localPort: 8081  # Only for "mock" profile
+        localPort: 8081

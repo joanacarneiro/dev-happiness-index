@@ -4,9 +4,11 @@
     "description": "A mock service for development",
     "main": "index.js",
     "scripts": {
-      "start": "echo 'Mock service running!'"
+      "start": "node app.js"
     },
-    "dependencies": {},
+    "dependencies": {
+      "express": "^4.17.1"
+    },
     "devDependencies": {},
     "engines": {
       "node": ">=14.0.0"
