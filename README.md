@@ -1,16 +1,26 @@
 # Software Engineer Happiness Index
 
-## Overview 
+This is the repository that tests the influence of different tools and processes in the happiness index of us, software developers! 
 
-This workshop is prepared for 
+</br>
+
+The test is simple --> you need to make a change to this code base. 
+
+Most likelly you never saw this code! 
+
+How much confortable are you doing this, right now, knowing that you will be able to test it and see the changes as you go?
 
 ## Prepare Environment
 
-For the usage of this repository, there are a set of tools that need to be installed as pre-requisites. The steps to install those tools are described below with differentiation per Operating System.
+Our team has an aligned set of machines, meaning that every team member has a MacOs with Apple silicon. In case you do not have, please go to section [](#Other Operating Systems orry)
 
-### MacOs
+Have a scorecard to evaluate the hapiness index
+
+### Pre-requisites
 
 Download and install [Docker](https://docs.docker.com/desktop/setup/install/mac-install/).
+
+### Start Environment
 
 Execute the below script, to make sure all of the pre-requisites are installed in your machine, if not already. This includes: brew, git, kubectl, kind and skaffold. In case this tools are already installed, then, their installation will be skipped.
 
@@ -18,8 +28,7 @@ Execute the below script, to make sure all of the pre-requisites are installed i
 ./setup/start.sh
 ```
 
-
-### Windows and Linux
+## Other Operating Systems (Sorry)
 
 For Windows or Linux Operating Systems, please follow the instructions of each tool to be installed.
 
