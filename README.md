@@ -15,7 +15,7 @@ Download and install [Docker](https://docs.docker.com/desktop/setup/install/mac-
 Execute the below script, to make sure all of the pre-requisites are installed in your machine, if not already. This includes: brew, git, kubectl, kind and skaffold. In case this tools are already installed, then, their installation will be skipped.
 
 ```bash
-./setup/macOs/create.sh
+./setup/start.sh
 ```
 
 

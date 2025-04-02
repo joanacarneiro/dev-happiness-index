@@ -59,3 +59,6 @@ if ! kind get clusters | grep -q '^geek-girls-cluster$'; then
 else
     printf -- 'Geek Girls Cluster already exists.... \n'
 fi
+
+## Launch skaffold
+skaffold dev
