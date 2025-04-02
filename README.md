@@ -1,26 +1,49 @@
 # Software Engineer Happiness Index
 
-This is the repository that tests the influence of different tools and processes in the happiness index of us, software developers! 
+</br>
+
+## What Is This Repository Intended For?
+
+This is the repository that tests the influence of different tools and processes in the happiness index of us, software developers! How confortable are we making a change to a code base? How much effort we immediatly forsee in order to do it? How many times will we just need to take a break by the simple task of testing it?
 
 </br>
 
-The test is simple --> you need to make a change to this code base. 
+## Mission
 
-Most likelly you never saw this code! 
+You just joined the team. The team is pretty confident on your skills and they ask you: 
 
-How much confortable are you doing this, right now, knowing that you will be able to test it and see the changes as you go?
+> Please amazing Geek Girl, can you make this two tiny bitty winny changes to this code base?
+>
+> One is on the logic of the code and another on the kubernetes infrastructure.
+>
+> Have we mentioned that they are really tiny smally changes?
 
-## Prepare Environment
+(How much confidence do you feel right now?)
 
-Our team has an aligned set of machines, meaning that every team member has a MacOs with Apple silicon. In case you do not have, please go to section [](#Other Operating Systems orry)
+</br>
 
-Have a scorecard to evaluate the hapiness index
+## Task 1
+
+
+</br>
+
+## Task 2
+
+
+</br>
+
+
+## Local Environment Setup
+
+Our team has an aligned set of machines, meaning that every team member has a MacOs with Apple silicon so that we can assure a coherent set of machines that we can predict a close set of behaviours, plus being able to spread much more lessons learned and automations that will fit all the team members.
+
+In case you do not have a MacOs, please go to section [we are really sorry you have other operating system, and please approach your manager as soon as possible and complain about it](#other-operating-systems-sorry).
 
 ### Pre-requisites
 
 Download and install [Docker](https://docs.docker.com/desktop/setup/install/mac-install/).
 
-### Start Environment
+### Launch Environment
 
 Execute the below script, to make sure all of the pre-requisites are installed in your machine, if not already. This includes: brew, git, kubectl, kind and skaffold. In case this tools are already installed, then, their installation will be skipped.
 
@@ -30,7 +53,9 @@ Execute the below script, to make sure all of the pre-requisites are installed i
 
 ## Other Operating Systems (Sorry)
 
-For Windows or Linux Operating Systems, please follow the instructions of each tool to be installed.
+### Pre-requisites
+
+Install the below tools, if not already.
 
 | Tool     | Instructions                             |
 | -------- | ---------------------------------------- |
@@ -40,6 +65,19 @@ For Windows or Linux Operating Systems, please follow the instructions of each t
 | Kind     | [All OS](https://kind.sigs.k8s.io/docs/user/quick-start/#installation)            | 
 | Skaffold | [All OS](https://skaffold.dev/docs/install/#standalone-binary) | 
 
+### Launch Environment
+
+Create a kind cluster
+
+```bash
+kind create cluster --name geek-girls-cluster
+```
+
+Start Skaffold
+
+```bash
+skaffold dev
+```
 
 ### Troubleshooting
 
