@@ -44,11 +44,43 @@ Execute the below script, to make sure all of the pre-requisites are installed i
 
 </br>
 
+### Test Environment
+
+Make a call to the existing endpoint, for example using curl.
+
+```bash
+curl -X GET http://127.0.0.1:8080
+```
+
 ⭐ **Note:** You are now ready to start your tasks! But let's check what happened locally and we can start programming!
 
 </br>
 
 ## Task 1
+
+Add a new endpoint so that:
+- user can call it passing its age and name
+- the endpoint should return the information received
+- returns an error in case name or age are not passed
+
+```javascrip
+app.post('/data', (req, res) => {
+  const { name, age } = req.body;
+
+  if (!name || !age) {
+    return res.status(400).json({ error: 'Name and age are required' });
+  }
+
+  res.json({ message: `Received data for ${name}, age ${age}` });
+});
+```
+
+**Example for Testing the changes**
+
+```bash
+curl -X POST http://127.0.0.1:8080/data -H "Content-Type: application/json" -d '{"name": "Alice", "age": 25}'
+{"message":"Received data for Alice, age 25"}
+```
 
 </br>
 
