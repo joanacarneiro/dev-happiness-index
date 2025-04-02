@@ -31,9 +31,15 @@ kind create cluster --name geek-girls-cluster
 ## Steps
 
 
+## Steps
+
+
 ```bash
 
 git clone https://github.com/joanacarneiro/dev-happiness-index.git
-cd dev-happiness-index
+cd dev-happiness-index/scr
+npm install
+cd ..
+skaffold dev
 
 ```
