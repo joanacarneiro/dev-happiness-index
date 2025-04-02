@@ -22,15 +22,6 @@ else
     printf -- 'Git is already installed.\n'
 fi
 
-## Install containerization tool
-which -s docker
-if [[ $? != 0 ]] ; then
-    printf -- 'Installing docker.... \n'
-    brew install --cask docker
-else
-    printf -- 'Docker is already installed.\n'
-fi
-
 ## Install kubernetes cli
 which -s kubectl
 if [[ $? != 0 ]] ; then
