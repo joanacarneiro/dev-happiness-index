@@ -90,10 +90,8 @@ curl -X POST http://127.0.0.1:8080/data -H "Content-Type: application/json" -d '
 Application hello-geek-girls only has 2 replicas on our kubernetes cluster. We need for it to have 3!
 
 ```bash
-kubectl get pods -A
+kubectl get pods
 ```
-
-Check that you have 2 pods for application hello-geek-girls.
 
 </br>
 
