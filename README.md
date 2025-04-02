@@ -111,7 +111,13 @@ kubectl get pods
 
 ## Task 3
 
-Lets explore the capabilities of skaffold it self. Lets add a profile to it.
+Lets explore the capabilities of skaffold it self. Lets add a profile to it. For that, please checkout branch profiles.
+
+```bash
+git checkout profiles
+```
+
+You might also want to do some cleanup and start the environment again.
 
 ```bash
 kind delete clusters geek-girls-cluster
