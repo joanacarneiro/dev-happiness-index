@@ -71,7 +71,7 @@ Create a kind cluster
 kind create cluster --name geek-girls-cluster
 ```
 
-Install NPM Packages
+Install NPM Packages (inside src folder)
 
 ```bash
 npm install
