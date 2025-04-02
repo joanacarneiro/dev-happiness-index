@@ -63,7 +63,8 @@ Add a new endpoint so that:
 - the endpoint should return the information received
 - returns an error in case name or age are not passed
 
-```javascrip
+**Example code**
+```javascript
 app.post('/data', (req, res) => {
   const { name, age } = req.body;
 
