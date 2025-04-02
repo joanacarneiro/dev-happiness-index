@@ -60,6 +60,7 @@ Install the below tools, if not already.
 | Docker   | [Windows](https://docs.docker.com/desktop/setup/install/windows-install/) </br> [Linux](https://docs.docker.com/desktop/setup/install/linux/) |
 | Kubectl  | [Windows](https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/) </br> [Linux](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
 | Kind     | [All OS](https://kind.sigs.k8s.io/docs/user/quick-start/#installation)            |
+| NPM      | [All OS](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) |
 | Skaffold | [All OS](https://skaffold.dev/docs/install/#standalone-binary) |
 
 ### Launch Environment
@@ -68,6 +69,12 @@ Create a kind cluster
 
 ```bash
 kind create cluster --name geek-girls-cluster
+```
+
+Install NPM Packages
+
+```bash
+npm install
 ```
 
 Start Skaffold
