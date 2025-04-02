@@ -109,6 +109,11 @@ kubectl get pods
 
 </br>
 
+## Task 3
+
+Lets explore the capabilities of skaffold it self. Lets add a profile to it.
+
+
 ## Other Operating Systems (Sorry)
 
 ### Pre-requisites
