@@ -7,7 +7,7 @@ build:
     - image: hello-geek-girls
       context: .
       docker:
-        dockerfile: Dockerfile
+        dockerfile: app/Dockerfile
 deploy:
   kubectl:
     manifests:
