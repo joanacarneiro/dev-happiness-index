@@ -7,6 +7,7 @@
 * [Local Environment Setup](#local-environment-setup)
 * [Task 1](#task-1)
 * [Task 2](#task-2)
+* [Task 3](#task-3)
 * [Other Operating Systems (Sorry)](#other-operating-systems-sorry)
 * [Troubleshooting](#troubleshooting)
 
