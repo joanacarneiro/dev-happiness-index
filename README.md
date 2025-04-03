@@ -129,9 +129,19 @@ How amazing it would be, that we could also automate the acceptance criteria. So
 
 Lets use [Cucumber](https://cucumber.io/docs/cucumber/api/?lang=javascript) with Gherkin synthax (GIVEN, THEN, WHEN).
 
+
+Checkout task3 branch 
 ```bash
-npm run test:acceptance
+git checkout task3
 ```
+
+```bash
+npm install
+npm run test:acceptance 
+```
+
+Open the locally generated report dev-happiness-index/acceptance-tests/reports/cucumber_report.html in a bowser of your choice.
+
 
 ### Task 4
 
