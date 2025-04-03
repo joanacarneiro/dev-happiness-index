@@ -146,6 +146,8 @@ Now please add a new acceptance test for scenario 2 of Tasks 1. Verify its succe
 npm run tests 
 ```
 
+</br>
+
 
 ## Task 4
 
