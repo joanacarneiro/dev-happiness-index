@@ -67,7 +67,7 @@ curl -X GET http://127.0.0.1:8080
 
 ## Task 1
 
-Adapt current /data endpoint so that it also accepts age as part of the POST payload. 
+Adapt current /data endpoint so that it also accepts age as part of the POST payload.
 This parameter is and integer and its mandatory.
 
 **Acceptance Criteria**
@@ -124,11 +124,12 @@ _Scenario_
 
 ## Task 3
 
-How amazing it would be, that we could also automate the scenarios in the acceptance criterias. So that whenever we would do a change, we would see it, but also we could locally run a baterry of tests to assure zero regressions.
+How amazing it would be, that we could also automate the scenarios in the acceptance criteria. So that whenever we would do a change, we would see it, but also we could locally run a battery of tests to assure zero regressions.
 
-Well, if its amazing, lets do it then. Lets use [Cucumber](https://cucumber.io/docs/cucumber/api/?lang=javascript) with Gherkin synthax (GIVEN, THEN, WHEN).
+Well, if its amazing, lets do it then. Lets use [Cucumber](https://cucumber.io/docs/cucumber/api/?lang=javascript) with Gherkin syntax (GIVEN, THEN, WHEN).
 
-Checkout task3 branch 
+Checkout task3 branch
+
 ```bash
 git checkout task3
 ```
@@ -138,9 +139,9 @@ npm install
 npm run tests 
 ```
 
-Open the locally generated report dev-happiness-index/acceptance-tests/reports/cucumber_report.html in a bowser of your choice to see the results.
+Open the locally generated report dev-happiness-index/acceptance-tests/reports/cucumber_report.html in a browser of your choice to see the results.
 
-Now please add a new acceptance test for scenario 2 of Tasks 1. Verify its successfull execution, by running the below command and checking the report.
+Now please add a new acceptance test for scenario 2 of Tasks 1. Verify its successful execution, by running the below command and checking the report.
 
 ```bash
 npm run tests 
@@ -148,12 +149,12 @@ npm run tests
 
 </br>
 
-
 ## Task 4
 
 Lets now add a new test for the verification of the kubernetes replicas.
 
-Checkout task4 branch 
+Checkout task4 branch
+
 ```bash
 git checkout task4
 ```
