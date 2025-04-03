@@ -147,7 +147,7 @@ npm run tests
 ```
 
 
-### Task 4
+## Task 4
 
 Lets explore the capabilities of skaffold it self. Lets add a profile to it. For that, please checkout branch profiles.
 
