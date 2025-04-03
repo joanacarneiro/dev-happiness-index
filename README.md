@@ -151,6 +151,26 @@ npm run tests
 
 ## Task 4
 
+Lets now add a new test for the verification of the kubernetes replicas.
+
+Checkout task4 branch 
+```bash
+git checkout task4
+```
+
+Find the new steps available in file dev-happiness-index/acceptance-tests/step_definitions/replica_check.steps.js.
+With that, construct the Gherkin Scenario in file dev-happiness-index/acceptance-tests/features/replica_check.feature.
+
+Test it with
+
+```bash
+npm run tests 
+```
+
+</br>
+
+## Task 5
+
 Lets explore the capabilities of skaffold it self. Lets add a profile to it. For that, please checkout branch profiles.
 
 ```bash
