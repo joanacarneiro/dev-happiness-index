@@ -52,8 +52,6 @@ Execute the below script, to make sure all of the pre-requisites are installed i
 ./setup/start.sh
 ```
 
-</br>
-
 ### Test Environment
 
 Make a call to the existing endpoint, for example using curl.
@@ -125,10 +123,9 @@ _Scenario_
 
 ## Task 3
 
-How amazing it would be, that we could also automate the acceptance criteria. So that whenever we would do a change, we would see it, but also we could locally run a baterry of tests to assure zero regressions.
+How amazing it would be, that we could also automate the scenarios in the acceptance criterias. So that whenever we would do a change, we would see it, but also we could locally run a baterry of tests to assure zero regressions.
 
-Lets use [Cucumber](https://cucumber.io/docs/cucumber/api/?lang=javascript) with Gherkin synthax (GIVEN, THEN, WHEN).
-
+Well, if its amazing, lets do it then. Lets use [Cucumber](https://cucumber.io/docs/cucumber/api/?lang=javascript) with Gherkin synthax (GIVEN, THEN, WHEN).
 
 Checkout task3 branch 
 ```bash
@@ -140,7 +137,7 @@ npm install
 npm run test:acceptance 
 ```
 
-Open the locally generated report dev-happiness-index/acceptance-tests/reports/cucumber_report.html in a bowser of your choice.
+Open the locally generated report dev-happiness-index/acceptance-tests/reports/cucumber_report.html in a bowser of your choice to see the results.
 
 
 ### Task 4
