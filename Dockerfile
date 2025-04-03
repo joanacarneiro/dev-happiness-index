@@ -5,9 +5,9 @@ FROM node:16-alpine
 WORKDIR /app
 
 # Copy files
-COPY src/package.json src/package-lock.json ./
+COPY app/package.json app/package-lock.json ./
 RUN npm install
-COPY src/ .
+COPY app/ .
 
 # Expose the app port
 EXPOSE 3000

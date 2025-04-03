@@ -11,7 +11,7 @@ build:
 deploy:
   kubectl:
     manifests:
-      - k8s/deployment.yaml 
+      - k8s/app-deployment.yaml 
 portForward:
   - resourceType: service
     resourceName: hello-geek-girls-service

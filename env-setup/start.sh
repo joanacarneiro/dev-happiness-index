@@ -69,10 +69,19 @@ else
     printf -- 'Npm is already installed.\n'
 fi
 
-## Install npm packages
-cd src
-npm install
-cd ..
+printf -- '\n'
+printf -- '\n'
+printf -- '⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐\n'
+printf -- '\n'
+printf -- '🚀 Happy Development! The environment is now ready! 🚀\n'
+printf -- '\n'
+printf -- 'To start hotreload please execute command: \n'
+printf -- 'skaffold dev \n'
 
-## Launch skaffold
-skaffold dev
+printf -- '\n'
+printf -- 'In case you need to delete the kind cluster, then run the command:\n'
+printf -- 'kind delete clusters geek-girls-cluster\n'
+printf -- '\n'
+printf -- '⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐\n'
+printf -- '\n'
+printf -- '\n'
