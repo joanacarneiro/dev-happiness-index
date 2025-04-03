@@ -2,12 +2,12 @@
 
 </br>
 
+**Table of Contents**
+
 * [What Is This Repository Intended For?](#what-is-this-repository-intended-for)
-* [Mission](#mission)
+* [Your Mission](#your-mission)
 * [Local Environment Setup](#local-environment-setup)
-* [Task 1](#task-1)
-* [Task 2](#task-2)
-* [Task 3](#task-3)
+* Tasks: [1](#task-1), [2](#task-2), [3](#task-3), [4](#task-4)
 * [Other Operating Systems (Sorry)](#other-operating-systems-sorry)
 * [Troubleshooting](#troubleshooting)
 
@@ -19,7 +19,7 @@ This is the repository that tests the influence of different tools and processes
 
 </br>
 
-## Mission
+## Your Mission
 
 You just joined the team. The team is pretty confident on your skills and they ask you:
 
