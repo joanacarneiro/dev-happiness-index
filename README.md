@@ -67,6 +67,8 @@ curl -X GET http://127.0.0.1:8080
 
 ## Task 1
 
+(use main branch)
+
 Adapt current /data endpoint so that it also accepts age as part of the POST payload.
 This parameter is and integer and its mandatory.
 
@@ -96,6 +98,8 @@ _Example of curl request for testing_
 curl -X POST http://127.0.0.1:8080/data -H "Content-Type: application/json" -d '{"name": "Alice", "age": 25}'
 ```
 
+(solution at branch task1-solution)
+
 </br>
 
 ## Task 2
@@ -115,6 +119,8 @@ _Scenario_
 **Given** hello-geek-girls application</br>
 **When** it is deployed  </br>
 **Then** 3 pods are present on the kubernetes cluster
+
+(solution at branch task2-solution)
 
 </br>
 
@@ -147,6 +153,8 @@ Now please add a new acceptance test for scenario 2 of Tasks 1. Verify its succe
 npm run tests 
 ```
 
+(solution at branch task3-solution)
+
 </br>
 
 ## Task 4
@@ -167,6 +175,8 @@ Test it with
 ```bash
 npm run tests 
 ```
+
+(solution at branch task4-solution)
 
 </br>
 
