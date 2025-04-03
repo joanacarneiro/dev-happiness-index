@@ -1,1 +1,3 @@
-src/node_modules/*
+app/node_modules/*
+acceptance-tests/node_modules/*
+acceptance-tests/reports/*
