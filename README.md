@@ -68,30 +68,28 @@ curl -X GET http://127.0.0.1:8080
 
 ## Task 1
 
-Add a new endpoint so that:
-- user can call it passing its age and name
-- the endpoint should return the information received
-- returns an error in case name or age are not passed
+Adapt current /data endpoint so that it also accepts age as part of the POST payload. 
+This parameter is and integer and its mandatory.
 
-**Example code**
-```javascript
-app.post('/data', (req, res) => {
-  const { name, age } = req.body;
+**Acceptance Criteria**
 
-  if (!name || !age) {
-    return res.status(400).json({ error: 'Name and age are required' });
-  }
+_Scenario 1_
 
-  res.json({ message: `Received data for ${name}, age ${age}` });
-});
-```
+**Given** a user calls /data endpoint on our application 
+**When** payload {"name": "Alice", "age": 25} is sent
+**Then** response payload is {"message":"Received data for Alice, age 25"}
 
-**Example for Testing the changes**
+_Scenario 2_
 
-```bash
-curl -X POST http://127.0.0.1:8080/data -H "Content-Type: application/json" -d '{"name": "Alice", "age": 25}'
-{"message":"Received data for Alice, age 25"}
-```
+**Given** a user calls /data endpoint on our application 
+**When** payload {"name": "Alice"} is sent
+**Then** response payload is { "error": "Name and age are required'"}
+
+_Scenario 3_
+
+**Given** a user calls /data endpoint on our application 
+**When** payload {"age": 25} is sent
+**Then** response payload is { "error": "Name and age are required'"}
 
 </br>
 
