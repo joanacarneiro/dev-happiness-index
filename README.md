@@ -125,6 +125,16 @@ _Scenario_
 
 ## Task 3
 
+How amazing it would be, that we could also automate the acceptance criteria. So that whenever we would do a change, we would see it, but also we could locally run a baterry of tests to assure zero regressions.
+
+Lets use [Cucumber](https://cucumber.io/docs/cucumber/api/?lang=javascript) with Gherkin synthax (GIVEN, THEN, WHEN).
+
+```bash
+npm run test:acceptance
+```
+
+### Task 4
+
 Lets explore the capabilities of skaffold it self. Lets add a profile to it. For that, please checkout branch profiles.
 
 ```bash
