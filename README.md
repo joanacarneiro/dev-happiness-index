@@ -101,11 +101,21 @@ curl -X POST http://127.0.0.1:8080/data -H "Content-Type: application/json" -d '
 
 ## Task 2
 
-Application hello-geek-girls only has 2 replicas on our kubernetes cluster. We need for it to have 3!
+Application hello-geek-girls only has 2 replicas on our kubernetes cluster. We need for it to have 3 for High Availability (HA) purposes!
+
+For checking the number of pods run the below command and confirm that 2 pods exist. After the adaptations, run the same command and check there are 3 pods.
 
 ```bash
 kubectl get pods
 ```
+
+**Acceptance Criteria**
+
+_Scenario_
+
+**Given** hello-geek-girls application</br>
+**When** it is deployed  </br>
+**Then** 3 pods are present on the kubernetes cluster
 
 </br>
 
