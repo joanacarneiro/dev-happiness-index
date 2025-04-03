@@ -91,6 +91,12 @@ _Scenario 3_
 **When** payload {"age": 25} is sent </br>
 **Then** response payload is { "error": "Name and age are required'"}
 
+_Example of curl request for testing_
+
+```bash
+curl -X POST http://127.0.0.1:8080/data -H "Content-Type: application/json" -d '{"name": "Alice", "age": 25}'
+```
+
 </br>
 
 ## Task 2
