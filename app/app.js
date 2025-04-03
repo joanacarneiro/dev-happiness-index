@@ -8,17 +8,14 @@ app.get('/', (req, res) => {
   res.send('Hello Geek Girls!');
 });
 
-//TODO: fix method to post
-app.put('/data', (req, res) => {
+app.post('/data', (req, res) => {
   const { name, age } = req.body;
 
   if (!name || !age) {
-    //TODO: add expected return payload  
-    return res.status(400).json();
+    return res.status(400).json({ error: 'Name and age are required' });
   }
 
-  //TODO: add expected return payload
-  res.json();
+  res.json({ message: `Received data for ${name}, age ${age}` });
 });
 
 app.listen(port, () => {
