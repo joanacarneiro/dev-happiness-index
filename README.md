@@ -75,20 +75,20 @@ This parameter is and integer and its mandatory.
 
 _Scenario 1_
 
-**Given** a user calls /data endpoint on our application 
-**When** payload {"name": "Alice", "age": 25} is sent
+**Given** a user calls /data endpoint on our application </br>
+**When** payload {"name": "Alice", "age": 25} is sent </br>
 **Then** response payload is {"message":"Received data for Alice, age 25"}
 
 _Scenario 2_
 
-**Given** a user calls /data endpoint on our application 
-**When** payload {"name": "Alice"} is sent
+**Given** a user calls /data endpoint on our application </br>
+**When** payload {"name": "Alice"} is sent </br>
 **Then** response payload is { "error": "Name and age are required'"}
 
 _Scenario 3_
 
-**Given** a user calls /data endpoint on our application 
-**When** payload {"age": 25} is sent
+**Given** a user calls /data endpoint on our application </br>
+**When** payload {"age": 25} is sent </br>
 **Then** response payload is { "error": "Name and age are required'"}
 
 </br>
