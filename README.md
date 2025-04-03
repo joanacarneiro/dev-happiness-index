@@ -2,11 +2,12 @@
 
 </br>
 
+**Table of Contents**
+
 * [What Is This Repository Intended For?](#what-is-this-repository-intended-for)
-* [Mission](#mission)
+* [Your Mission](#your-mission)
 * [Local Environment Setup](#local-environment-setup)
-* [Task 1](#task-1)
-* [Task 2](#task-2)
+* Tasks: [1](#task-1), [2](#task-2), [3](#task-3), [4](#task-4)
 * [Other Operating Systems (Sorry)](#other-operating-systems-sorry)
 * [Troubleshooting](#troubleshooting)
 
@@ -18,7 +19,7 @@ This is the repository that tests the influence of different tools and processes
 
 </br>
 
-## Mission
+## Your Mission
 
 You just joined the team. The team is pretty confident on your skills and they ask you:
 
@@ -52,8 +53,6 @@ Execute the below script, to make sure all of the pre-requisites are installed i
 ./setup/start.sh
 ```
 
-</br>
-
 ### Test Environment
 
 Make a call to the existing endpoint, for example using curl.
@@ -68,7 +67,7 @@ curl -X GET http://127.0.0.1:8080
 
 ## Task 1
 
-Adapt current /data endpoint so that it also accepts age as part of the POST payload. 
+Adapt current /data endpoint so that it also accepts age as part of the POST payload.
 This parameter is and integer and its mandatory.
 
 **Acceptance Criteria**
@@ -125,6 +124,54 @@ _Scenario_
 
 ## Task 3
 
+How amazing it would be, that we could also automate the scenarios in the acceptance criteria. So that whenever we would do a change, we would see it, but also we could locally run a battery of tests to assure zero regressions.
+
+Well, if its amazing, lets do it then. Lets use [Cucumber](https://cucumber.io/docs/cucumber/api/?lang=javascript) with Gherkin syntax (GIVEN, THEN, WHEN).
+
+Checkout task3 branch
+
+```bash
+git checkout task3
+```
+
+```bash
+npm install
+npm run tests 
+```
+
+Open the locally generated report dev-happiness-index/acceptance-tests/reports/cucumber_report.html in a browser of your choice to see the results.
+
+Now please add a new acceptance test for scenario 2 of Tasks 1. Verify its successful execution, by running the below command and checking the report.
+
+```bash
+npm run tests 
+```
+
+</br>
+
+## Task 4
+
+Lets now add a new test for the verification of the kubernetes replicas.
+
+Checkout task4 branch
+
+```bash
+git checkout task4
+```
+
+Find the new steps available in file dev-happiness-index/acceptance-tests/step_definitions/replica_check.steps.js.
+With that, construct the Gherkin Scenario in file dev-happiness-index/acceptance-tests/features/replica_check.feature.
+
+Test it with
+
+```bash
+npm run tests 
+```
+
+</br>
+
+## Task 5
+
 Lets explore the capabilities of skaffold it self. Lets add a profile to it. For that, please checkout branch profiles.
 
 ```bash
@@ -138,6 +185,7 @@ kind delete clusters geek-girls-cluster
 ./setup/start.sh
 ```
 
+</br>
 
 ## Other Operating Systems (Sorry)
 
