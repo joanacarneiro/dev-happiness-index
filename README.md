@@ -134,10 +134,16 @@ git checkout task3
 
 ```bash
 npm install
-npm run test:acceptance 
+npm run tests 
 ```
 
 Open the locally generated report dev-happiness-index/acceptance-tests/reports/cucumber_report.html in a bowser of your choice to see the results.
+
+Now please add a new acceptance test for scenario 2 of Tasks 1. Verify its successfull execution, by running the below command and checking the report.
+
+```bash
+npm run tests 
+```
 
 
 ### Task 4
