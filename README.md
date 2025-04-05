@@ -156,6 +156,7 @@ git checkout task3
 ```
 
 ```bash
+cd acceptance-tests
 npm install
 npm run tests 
 ```
