@@ -79,8 +79,7 @@ curl -X GET http://127.0.0.1:8080
 
 (use main branch)
 
-Adapt current /data endpoint so that it also accepts age as part of the POST payload.
-This parameter is and integer and its mandatory.
+Correct current /data endpoint so that its converted to a POST payload and the expected success and error responses are according to the below acceptance criteria scenarios.
 
 **Acceptance Criteria**
 
