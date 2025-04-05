@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: hello-geek-girls
+          image: hello-geek-girls-local
           ports:
             - containerPort: 3000
 

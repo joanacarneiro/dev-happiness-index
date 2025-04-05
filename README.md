@@ -43,6 +43,16 @@ In case you do not have a machine that matches the other team members (**MacOs w
 
 ### Pre-requisites
 
+**Install git and clone this repo to your local machine**
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install git
+git clone https://github.com/joanacarneiro/dev-happiness-index.git
+```
+
+**Install Docker**
+
 Download and install [Docker](https://docs.docker.com/desktop/setup/install/mac-install/).
 
 ### Launch Environment
@@ -67,8 +77,9 @@ curl -X GET http://127.0.0.1:8080
 
 ## Task 1
 
-Adapt current /data endpoint so that it also accepts age as part of the POST payload.
-This parameter is and integer and its mandatory.
+(use main branch)
+
+Correct current /data endpoint so that its converted to a POST payload and the expected success and error responses are according to the below acceptance criteria scenarios.
 
 **Acceptance Criteria**
 
@@ -96,6 +107,8 @@ _Example of curl request for testing_
 curl -X POST http://127.0.0.1:8080/data -H "Content-Type: application/json" -d '{"name": "Alice", "age": 25}'
 ```
 
+(solution at branch task1-solution)
+
 </br>
 
 ## Task 2
@@ -115,6 +128,8 @@ _Scenario_
 **Given** hello-geek-girls application</br>
 **When** it is deployed  </br>
 **Then** 3 pods are present on the kubernetes cluster
+
+(solution at branch task2-solution)
 
 </br>
 
@@ -147,6 +162,8 @@ Now please add a new acceptance test for scenario 2 of Tasks 1. Verify its succe
 npm run tests 
 ```
 
+(solution at branch task3-solution)
+
 </br>
 
 ## Task 4
@@ -167,6 +184,8 @@ Test it with
 ```bash
 npm run tests 
 ```
+
+(solution at branch task4-solution)
 
 </br>
 
