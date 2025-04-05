@@ -43,6 +43,16 @@ In case you do not have a machine that matches the other team members (**MacOs w
 
 ### Pre-requisites
 
+**Install git**
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install git
+git clone https://github.com/joanacarneiro/dev-happiness-index.git
+```
+
+**Install Docker**
+
 Download and install [Docker](https://docs.docker.com/desktop/setup/install/mac-install/).
 
 ### Launch Environment
