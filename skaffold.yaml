@@ -3,8 +3,12 @@ kind: Config
 metadata:
   name: hello-geek-girls
 build:
+  tagPolicy:
+    sha256: {}
+  local:
+    push: false
   artifacts:
-    - image: hello-geek-girls
+    - image: hello-geek-girls-local
       context: .
       docker:
         dockerfile: app/Dockerfile
