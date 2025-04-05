@@ -63,6 +63,12 @@ Execute the below script, to make sure all of the pre-requisites are installed i
 ./setup/start.sh
 ```
 
+### Start hot reload
+
+```bash
+skaffold dev
+```
+
 ### Test Environment
 
 Make a call to the existing endpoint, for example using curl.
