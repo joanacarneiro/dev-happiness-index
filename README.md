@@ -43,7 +43,7 @@ In case you do not have a machine that matches the other team members (**MacOs w
 
 ### Pre-requisites
 
-**Install git**
+**Install git and clone this repo to your local machine**
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
